@@ -32,7 +32,7 @@ class Manager extends Employee {
     constructor(id, firstname, lastname, taxId, salary){
         super (id, firstname, lastname, taxId, salary);
 
-        this.managedEmployees = []
     }
+
 
 }
