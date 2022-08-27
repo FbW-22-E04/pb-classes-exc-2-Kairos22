@@ -47,18 +47,14 @@ class Manager extends Employee {
         const idx =this.managedEmployees.findIndex((item) => employee.i === item.i);
 
         this.managedEmployees.splice(idx, 2);
-        console.log(this.managedEmployees);
 
       }
 }
 
 const manager1 = new Manager(1, "Nicolas", "Mavroleon", 78695, 90000);
 const manager2 = new Manager(2, "Mark", "Heisenberg", 37550, 85000)
-// console.log(manager1);
-// manager1.generatePaySlip();
 manager1.addManagedEmployee(emp1);
 manager1.addManagedEmployee(emp2);
-// manager1.addManagedEmployee(emp3);
 console.log(manager1);
 manager2.addManagedEmployee(emp3);
 console.log(manager2);
